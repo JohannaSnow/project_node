@@ -4,8 +4,8 @@ var app = express();
 
 
 //spin up the server
-app.listen( '8080', 'localhost', function( req, res ){
-  console.log( 'server listening on port 8080' );
+app.listen( process.env.PORT || 3000, function( req, res ){
+  console.log( 'server listening on port 3000' );
 }); //end app.listen
 
 
